@@ -1,6 +1,11 @@
 matrix:
   include:
     - language: android
+      android:
+        components:
+          - build-tools-26.0.2
+          - android-26
+          - extra
       os:
         - linux
         - osx
@@ -29,7 +34,7 @@ matrix:
         - git clone https://github.com/flutter/flutter.git -b dev
         - ./flutter/bin/flutter doctor
       script:
-        - cd example && ../flutter/bin/flutter build ipa
+        - cd example && ../flutter/bin/flutter build ios
       cache:
         directories:
           - $HOME/.pub-cache
