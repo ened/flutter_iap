@@ -68,4 +68,5 @@ protobuf {
 
 dependencies {
     implementation 'com.google.protobuf:protobuf-lite:3.0.1'
+implementation 'androidx.annotation:annotation:1.1.0'
 }
